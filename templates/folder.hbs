@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+
+<ul>
+  {{#each email in emails}}
+    <li>{{#link-to 'email' email.id}}{{email.from}} - {{email.title}}{{/link-to}}</li>
+  {{/each}}
+</ul>

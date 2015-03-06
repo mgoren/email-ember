@@ -1,4 +1,9 @@
-<h1>{{title}}</h1>
-<h5>from: {{from}}</h5>
-<h5>to: {{to}}</h5>
-<p>{{body}}</p>
+<div class="email-display">
+  <h1>{{title}}</h1>
+  <h5>from: {{from}}</h5>
+  <h5>to: {{to}}</h5>
+  <p>{{body}}</p>
+</div>
+
+<p>{{#link-to 'assign-to-folder' classNames="btn btn-info"}}Assign to Folder{{/link-to}}</p>
+{{outlet}}

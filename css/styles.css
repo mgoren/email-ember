@@ -1,7 +1,21 @@
-button {
-  margin-right: 10px;
+ul {
+  padding-left: 0;
 }
 
-img {
-  margin-top: 20px;
+select {
+  width: 200px;
+}
+
+.btn-xs {
+  margin-left: 10px;
+}
+
+form {
+  margin: 20px 0;
+}
+
+.email-display {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 20px 0;
 }
