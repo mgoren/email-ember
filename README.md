@@ -3,12 +3,12 @@ Email app
 
 by Mike Goren
 
-This is a simple email app as practice learning Ember.
+This is a simple less-than-functional email app as practice learning Ember.
 
 Installation
 ------------
 
-Install email-ember by first cloning the repository: 
+Install by first cloning the repository: 
 `$ git clone http://github.com/mgoren/email-ember.git`
 
 Run the following command to start the python server:
