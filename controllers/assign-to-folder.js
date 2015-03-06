@@ -11,7 +11,7 @@ app.AssignToFolderController = Ember.ObjectController.extend({
 
       selectedFolder.get('emails').pushObject(email);
       selectedFolder.save();
-
+      this.transitionToRoute('folder', selectedFolderID)
     }
   }
 });
