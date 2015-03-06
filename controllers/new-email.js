@@ -1,12 +1,18 @@
-app.NewPostController = Ember.Controller.extend({
+app.NewEmailController = Ember.Controller.extend({
   actions: {
-    save: function() {
-      var newPost = this.store.createRecord('post', {
+    send: function() {
+      var newEmail = this.store.createRecord('email', {
         title: this.get('title'),
-        body: this.get('body')
+        body: this.get('body'),
+        from: this.get('from'),
+        to: this.get('to')
       });
-      newPost.save();
-      this.transitionToRoute('posts');
+      newEmail.save();
+      this.set('title', null);
+      this.set('body', null);
+      this.set('from', null);
+      this.set('to', null);
+      this.transitionToRoute('emails');
     }
   }
 });

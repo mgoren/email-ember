@@ -1,13 +1,19 @@
-<h1>New Post</h1>
+<h1>Compose New Message</h1>
 
 <form>
   <div class="form-group">
+    <label for="from">From</label>
+    {{input id="from" class="form-control" value=from}}
+  </div><div class="form-group">
+    <label for="to">To</label>
+    {{input id="to" class="form-control" value=to}}
+  </div><div class="form-group">
     <label for="title">Title</label>
     {{input id="title" class="form-control" value=title}}
   </div>
   <div class="form-group">
     <label for="body">Body</label>
-    {{textarea id="body" class="form-control" rows="15" value=body}}
+    {{textarea id="body" class="form-control" rows="10" value=body}}
   </div>
-  <button class="btn btn-primary" {{action 'save'}}>Save</button>
+  <button class="btn btn-primary" {{action 'send'}}>Send</button>
 </form>

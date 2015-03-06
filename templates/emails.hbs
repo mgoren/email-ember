@@ -1,8 +1,7 @@
-<h1>blog</h1>
+<h1>Inbox</h1>
 <ul>
-  {{#each post in model}}
-    <li>{{#link-to 'post' post.id}}{{post.title}}{{/link-to}}</li>
+  {{#each email in model}}
+    <li>{{#link-to 'email' email.id}}{{email.from}} - {{email.title}}{{/link-to}}</li>
   {{/each}}
 </ul>
-<p><a href="#" {{action 'sortByTitle'}}>Sort by Title</a></p>
-<p>{{#link-to 'new-post' classNames="btn btn-primary"}}New Post{{/link-to}}</p>
+<p>{{#link-to 'new-email' classNames="btn btn-primary"}}New Message{{/link-to}}</p>
