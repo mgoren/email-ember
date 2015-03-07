@@ -6,6 +6,7 @@ app.NewFolderController = Ember.Controller.extend({
       });
       newFolder.save();
       this.set('folderName', null);
+      this.transitionToRoute('folders');
     }
   }
 });

@@ -5,5 +5,13 @@
   <p>{{body}}</p>
 </div>
 
+<!--
+{{#if folder.title}}
+<p>Currently assigned to {{folder.title}} folder.</p>
+{{else}}
+<p>Not yet in a folder.</p>
+{{/if}}
+-->
+
 <p>{{#link-to 'assign-to-folder' classNames="btn btn-default"}}Assign to Folder{{/link-to}}</p>
 {{outlet}}

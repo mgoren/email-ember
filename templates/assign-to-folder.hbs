@@ -1,4 +1,8 @@
+{{#if model.length}}
 <form class="form-inline" role="form">
   {{view "select" content=model optionValuePath="content.id" optionLabelPath="content.title" value=selectedFolder}}
   <button class="btn btn-default btn-xs" {{action 'assignToFolder'}}>Assign</button>
 </form>
+{{else}}
+No folders exist.
+{{/if}}

@@ -1,5 +1,5 @@
 <h1>All Folders</h1>
-<ul>
+<ul class="folders-display">
   {{#each folder in model}}
     <li>{{#link-to 'folder' folder.id}}{{folder.title}}{{/link-to}}</li>
   {{/each}}

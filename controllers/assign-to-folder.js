@@ -9,6 +9,14 @@ app.AssignToFolderController = Ember.ObjectController.extend({
       
       var email = this.get('controllers.email.model'); // does this magically get the right email because was inside outlet?
 
+      debugger;
+
+      // first remove previous folder assignment
+      if(email.get('folder').get('content') !== null) {
+        email.get('folder').get('emails').removeObject(email);
+        email.save();
+      }
+
       selectedFolder.get('emails').pushObject(email);
       selectedFolder.save();
       this.transitionToRoute('folder', selectedFolderID)
