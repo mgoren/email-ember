@@ -5,6 +5,14 @@ by Mike Goren
 
 This is a simple less-than-functional email app as practice learning Ember.
 
+Known Issues
+------------
+
+ANNOYING BUG!!! ANY IDEAS??? 
+Assigning folders seems to work, and it shows up correctly (in the data of Ember inspector as well as the interface) when looking at email.hbs linked to from folders.hsb, but the assigned folder becomes null apparently when linked to email.hsb from emails.hsb. The assignment appears again though when going from the folder view again. Spent hours troubleshooting to no avail.
+
+
+
 Installation
 ------------
 
