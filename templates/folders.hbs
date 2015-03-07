@@ -1,7 +1,8 @@
 <h1>All Folders</h1>
 <ul class="folders-display">
   {{#each folder in model}}
-    <li>{{#link-to 'folder' folder.id}}{{folder.title}}{{/link-to}}</li>
+    <li>{{#link-to 'folder' folder.id}}{{folder.title}} ({{folder.emails.length}}){{/link-to}}</li>
   {{/each}}
 </ul>
-<p>{{#link-to 'new-folder' classNames="btn btn-default"}}New Folder{{/link-to}}</p>
+<p>{{#link-to 'new-folder' classNames="btn btn-default"}}<i class="fa fa-folder-open"></i>
+ &nbsp; New Folder{{/link-to}}</p>

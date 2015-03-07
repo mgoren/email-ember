@@ -3,6 +3,15 @@ ul {
   list-style: none;
 }
 
+td, a {
+  color: #300138;
+}
+
+a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
 select {
   width: 200px;
 }
@@ -35,4 +44,8 @@ th, td {
   padding: 3px 7px;
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
+}
+
+.folders-display {
+  margin-bottom: 20px;
 }
